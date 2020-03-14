@@ -2,7 +2,7 @@
 base_url = "https://fogine.dev"
 
 # The site title and description; used in RSS by default.
-title = "fogine dev blog"
+title = "fogine software"
 description = ""
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -51,13 +51,14 @@ background_color = "orange"
 menu_items = [
     # each of these is optional, name and url are required
     # $BASE_URL is going to be substituted by base_url from configuration
-    {name = "blog", url = "$BASE_URL/blog"},
+    {name = "blog", url = "$BASE_URL"},
 
     # tags should only be enabled if you have "tags" taxonomy
     # see documentation below for more details
     {name = "tags", url = "$BASE_URL/tags"},
     {name = "archive", url = "$BASE_URL/archive"},
     {name = "about me", url = "$BASE_URL/about"},
+    {name = "contact", url = "$BASE_URL/contact"},
 
     # set newtab to true to make the link open in new tab
     #{name = "github", url = "https://github.com/fogine", newtab = true},
