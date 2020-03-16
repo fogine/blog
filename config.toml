@@ -28,7 +28,7 @@ default_language = "en"
 
 [extra]
 # Put all your custom variables here
-post_view_navigation_prompt = "Readme more"
+post_view_navigation_prompt = "Thanks for reading! Read other posts?"
 
 # The logo text - defaults to "Terminimal theme"
 logo_text = "fogine.dev"
