@@ -19,7 +19,7 @@ However it's left up to the developer to build rigid project foundations.
 Developers need to worry about how they are gonna handle all the `async` & `sync` errors and even create bridges between `callback` & `promise` patterns. They need to make sure that internal exceptions get logged and do not leak as part of a response or cause nodejs process to crash.  
 
 A lot of additional setup work needs to be done including solutions for service configuration, data validation, request identification and more.  
-Chances are that a developer has a set of middlewares (plugins) that help minimize boilerplate code.  
+Chances are that the developer has a set of middlewares (plugins) that help minimize boilerplate code.  
 Although that being very flexible approach, it has considerable disadvantage in it being more error-prone solution as the developer can not avoid reinventing the wheel in terms of integrating everything together.  
 Taking more robust approach when laying down project foundations allows for better consistency in terms of behavior and makes the application more reliable and scalable.
 
@@ -40,5 +40,7 @@ __Main features:__
     - API documentation (in form of frontend application) autogeneration from code
 
 
+Even though the library has been production tested in multiple commercial projects, it has not found its community yet.
 Any contributions are welcome and greatly appreciated!  
+
 In the next post we will go through tutorial on how to build simple API service with [serviser](https://github.com/lucid-services/serviser).

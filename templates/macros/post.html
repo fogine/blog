@@ -1,3 +1,25 @@
+{% macro table_of_contents() %}
+    {%- if page.extra.render_toc and toc %}
+        <h2 >Contents:</h2>
+        <ul>
+            {% for h1 in toc %}
+            <li>
+                <a href="{{h1.permalink | safe}}">{{ h1.title }}</a>
+                <!--{% if h1.children %}-->
+                <!--<ul>-->
+                    <!--{% for h2 in h1.children %}-->
+                    <!--<li>-->
+                        <!--<a href="{{h2.permalink | safe}}">{{ h2.title }}</a>-->
+                    <!--</li>-->
+                    <!--{% endfor %}-->
+                <!--</ul>-->
+                <!--{% endif %}-->
+            </li>
+            {% endfor %}
+        </ul>
+    {%- endif %}
+{% endmacro table_of_contents %}
+
 {% macro content(page, summary) %}
     {%- if summary and page.summary %}
         <div class="post-content">
@@ -64,6 +86,7 @@
     </div>
 
     {{ post_macros::tags(page=page) }}
+    {{ post_macros::table_of_contents() }}
 {% endmacro header %}
 
 

@@ -28,6 +28,7 @@ default_language = "en"
 
 [extra]
 # Put all your custom variables here
+post_view_navigation_prompt = "Readme more"
 
 # The logo text - defaults to "Terminimal theme"
 logo_text = "fogine.dev"

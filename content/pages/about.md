@@ -4,7 +4,7 @@ path = 'about'
 +++
 
 My name is David Lasek (better known as `fogine` on the internet).  
-I'm a problem solving humanoid helping businesses grow.  
+I'm a problem solving humanoid helping businesses grow their products.  
 
 I have played major role in development of marketplaces which raised millions in revenue and helped to grow company customer base by factor of 10, from hundreds of thousand to millions.  
 Worked on content sharing and community based platforms.  
