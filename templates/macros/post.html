@@ -1,3 +1,25 @@
+{% macro disqus(page) %}
+    <div class="disqus_dialog">
+        <div>
+            <img src="/images/github.png" alt="github logo"/>
+            The comment system is powered by GitHub.<br />
+            You can comment directly below, but you would need to authorise the <a href="https://github.com/utterance" target="_blank">Utterance's</a> app to post issues to GitHub on your behalf.<br />
+            <!--<br />-->
+            <!--Or if you prefer, you can <a href="https://github.com/fogine/blog/issues" target="_blank">comment directly on GitHub</a>-->
+        </div>
+    </div>
+    <div class="disqus">
+        <script src="https://utteranc.es/client.js"
+                repo="fogine/blog"
+                issue-term="pathname"
+                label="Comment"
+                theme="github-dark-orange"
+                crossorigin="anonymous"
+                async>
+        </script>
+    </div>
+{% endmacro disqus %}
+
 {% macro table_of_contents() %}
     {%- if page.extra.render_toc and page.toc %}
         <h2 >Contents:</h2>
