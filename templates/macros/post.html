@@ -100,6 +100,21 @@
     {% endif -%}
 {% endmacro earlier_later %}
 
+{% macro head(page) %}
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="@david_lasek">
+    <meta property="twitter:image" content="https://fogine.dev/apple-touch-icon.png">
+    <meta property="twitter:title" content="{{ page.title }}">
+    <meta property="twitter:description" content="{{ page.summary }}">
+
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.summary }}">
+    <meta property="og:image" content="https://fogine.dev/apple-touch-icon.png">
+    <meta property="og:url" content="{{ page.permalink }}">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:site_name" content="{{ config.title }}">
+{% endmacro head %}
 
 {% macro header(page) %}
     <h1 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h1>
