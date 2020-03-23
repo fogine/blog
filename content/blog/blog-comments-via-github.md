@@ -16,8 +16,8 @@ So recently when I was in middle of integration of `disqus` plugin to this blog,
 *Scroll down for **DLDR;***
 
 It did not take long to find few very interesting alternatives.  
-For example [Talkyard](https://www.talkyard.io/) and [Commento](https://commento.io/) are open-source projects with focus on privacy and come with all major features. You can host them for example on `heroku` for free or pay reasonable price for product as a service.  
-Although for my use case they are both robust solutions which I do not need.  
+For example [Talkyard](https://www.talkyard.io/) and [Commento](https://commento.io/) are open-source projects with focus on privacy and come with all major features. You can host them eg.: on `heroku` for free or pay reasonable price for product as a service.  
+Although they are both robust solutions which I do not need for my use case.  
 
 
 However [Staticman](https://github.com/eduardoboucas/staticman) was the project that cough my eye:  
@@ -27,11 +27,11 @@ It'd still require me to host my own server though.
 At this point I got an idea - since I host this blog on [GitHub](https://github.com/fogine/blog), I could create a comment system which would integrate with `GitHub Issues`.  
 When somebody comments on my blog I'd use `GitHub API` to create an issue and store the discussion there.  
 For my target audience this would be ideal solution!  
-It turned out that there is already a `GitHub widget` for that! It's called [utterances](https://github.com/utterance/utterances).  
+It turned out that there is already a `GitHub widget` for that. It's called [utterances](https://github.com/utterance/utterances).  
 
 ## TLDR;
 ________
-Here is how it works:  
+### Here is how it works:  
 
 - You as a blog owner install [Utterances GitHub App](https://github.com/apps/utterances) on the GitHub repository that hosts comments.
 - You as a blog owner include simple script where you want the comments to load:
@@ -49,6 +49,10 @@ Here is how it works:
 - If an issue does not exist, [utterances-bot](https://github.com/utterances-bot) will create it first time someone comments.
 - To comment, users must authorize the `utterances` app to create issues (for the blog repository only) on their behalf.
 - Alternatively, users can comment on the GitHub issue directly.
+
+### Considering limitations of using GitHub Issue tracker service to power blog comments:  
+- It's features are basic. For example, you can't reply to someone's comment (You can quote him though).
+- GitHub's Search API is `rate limited` to `5000` requests/hour. Which is a little really. So if (I mean When) this blog gets popular enough, I'll have to come with solution that actually scales.
 
 
 You can see it in action, bellow ⌄⌄⌄
