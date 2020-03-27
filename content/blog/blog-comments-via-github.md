@@ -22,13 +22,14 @@ For example [Talkyard](https://www.talkyard.io/) and [Commento](https://commento
 Although they are both robust solutions which I do not need for my use case.  
 
 
-However [Staticman](https://github.com/eduardoboucas/staticman) was the project that cough my eye:  
+However, [Staticman](https://github.com/eduardoboucas/staticman) was the project that cough my eye:  
 > Staticman is a Node.js application that receives user-generated content and uploads it as data files to a GitHub and/or GitLab repository. In practice, this allows you to have dynamic content (e.g. blog post comments) as part of a fully static website, as long as your site automatically deploys on every push to GitHub and/or GitLab.
 
 It'd still require me to host my own server though.  
+
 At this point I got an idea - since I host this blog on [GitHub](https://github.com/fogine/blog), I could create a comment system which would integrate with `GitHub Issues`.  
-When somebody comments on my blog I'd use `GitHub API` to create an issue and store the discussion there.  
-For my target audience this would be ideal solution!  
+When somebody comments on my blog I'd use `GitHub API` to create an issue and store the discussion there. For my target audience this would be ideal solution!  
+
 It turned out that there is already a `GitHub widget` for that. It's called [utterances](https://github.com/utterance/utterances).  
 
 ## TLDR;
