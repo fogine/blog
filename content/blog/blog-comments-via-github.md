@@ -8,8 +8,10 @@ tags = ["GitHub", "static-website", "blog", "disqus"]
 +++
 
 In the past, [disqus](https://disqus.com/) was the solution to go for when you needed a functionality for your static website that would enable people to post comments and ask questions under your posts.  
+
 With it's free tier, you would get a package with basic features. It comes with a price though of it being relatively heavy solution.  
 It's ads supported and increases page weight by factor of `10`! Not to mention it lets other applications like Facebook to track your visitors.  
+
 So recently when I was in middle of integration of `disqus` plugin to this blog, I decided to revisit my product of choice and explore other options in nowadays product driven market.  
 
 <!-- more -->

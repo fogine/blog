@@ -7,7 +7,10 @@ date = 2020-03-03
 tags = ["Node.JS", "back-end", "serviser", "expressjs", "open-api"]
 +++
 
-Is writing and maintaining up to date documentation for your APIs a pain for you? Do you miss an environment where it is safe to raise exceptions and not to worry about how they will propagate and be processed?  
+Is writing and maintaining up to date documentation for your APIs a pain for you?  
+
+Do you miss an environment where it is safe to raise exceptions and not to worry about how they will propagate and be processed?  
+
 What about having out of the box solution for validating complex input and output data structures without it polluting your domain logic?  
 
 These were the main reasons of my motivation to create yet another `Node.js` web framework ([serviser](https://github.com/lucid-services/serviser)).

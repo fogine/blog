@@ -9,7 +9,9 @@ tags = ["unixporn", "linux", "archlinux", "i3wm", "tmux", "zsh", "vim", "vifm", 
 render_toc = true
 +++
 
-As I spend significant amount of time working with computers, it's important to me to have a desktop environment which does not distract me from work. Moreover I expect my system environment to help me be more productive and to complement my habits in context of how I interact with the environment.  
+As I spend significant amount of time working with computers, it's important to me to have a desktop environment which does not distract me from work.  
+
+Moreover I expect my system environment to help me be more productive and to complement my habits in context of how I interact with the environment.  
 
 In this post I'm gonna describe how is my linux installation setup and main tools I use on every day basic for past 6 years and why.  
 Do not expect configuration tutorial but rather high-level toolset overview.
@@ -20,7 +22,11 @@ Do not expect configuration tutorial but rather high-level toolset overview.
 
 ![arch-vs-ubuntu](/images/arch_vs_ubuntu.png)
 
-As majority of current `Arch` users I started using `Xubuntu` (Ubuntu with `xfce` desktop environment instead of `gnome`) as my first `UNIX` based OS. `Xubuntu` was certainly better than `Windows` as it allowed me to "hack" it around and it had a proper `shell`. However, at the end of the day, it was my unorthodox doing that led to all kind of crashes during system upgrade and ultimately forced me to reinstall the system.  
+As majority of current `Arch` users, I started using `Xubuntu` (Ubuntu with `xfce` desktop environment instead of `gnome`) as my first `UNIX` based OS.  
+
+`Xubuntu` was certainly better than `Windows` as it allowed me to "hack" it around and more importantly, it had a proper `shell`.  
+
+However, at the end of the day, it was my unorthodox doing that led to all kind of crashes during system upgrade and ultimately was forcing me to reinstall the system.  
 
 Lesson learned: `Ubuntu` is a robust preconfigured system made for general public, not necessary for developers, serving as out of the box conventional desktop everybody is familiar with.  
 
@@ -35,7 +41,9 @@ These are [Archlinux](https://www.archlinux.org/) features that make it a superi
 ## System configuration - dotfiles
 
 All configuration files are tracked in (public) `git` [repository](https://github.com/fogine/dotfiles) and reside in single `.dotfiles` directory (check it out if you want to see how something is configured).  
+
 In there, configuration files are organized in separate folders by topic and symlinked into `$HOME` when you run `script/bootstrap`.  
+
 This makes it really simple to add and edit configuration and when you need to reinstall once in roughly 5 years, you run single command to get everything setup exactly how it was before.
 
 ## Window manager - i3wm
@@ -46,6 +54,7 @@ Tiling window managers organize windows in a grid of tiles so that 100% of the s
 ![i3wm tiled windows](/images/i3wm-tiles.png)
 
 **Note:** You can still have classic floating windows but those are almost always redundant.  
+
 Usually, the user creates, deletes, moves, resizes or focuses windows with shortcuts (in addition to mouse navigation). Mine are defined in such way so that they match vim-like window manipulation mappings:
 
 | Action              | Shortcut |
@@ -78,8 +87,11 @@ Lets look at some examples:
 {{ figure(src="/images/zsh-tab-completion.gif" alt="zsh tab completion" caption="zsh tab completion") }}
 
 The grey text behind cursor that you can see in the preview suggests best matching command based on what you have typed so far and on your shell command history.  
+
 You can accept suggested command anytime with `Ctrl+e`.  
+
 Moreover if you want to see list of available commands or arguments from man pages, you just press `Tab` key.  
+
 Also you can notice that `git` command is highlighted with green-ish color - that signalizes that command is recognized and the shell can find appropriate file with executable flag.  
 
 I also use some navigation tools that make a shell whole a lot more intuitive:  
@@ -121,15 +133,18 @@ If you use `vim`, you will love `vifm`.
 ## System-wide interface - dmenu / rofi
 
 If you got all the way down here, you may be asking where are some buttons, where is my system bar with time and tray area with application icons or start menu? The answer is simple, there are not any.  
+
 I have found out I do not need any system wide status bar with icons and basic information like date-time etc... It would be wasting of screen space the most of the time anyway and source of distraction.  
 
-So how do I start applications, turn off the computer, connect to wifi or manage removable devices like usb flash drives, you are asking?  
-Answer: I use `dmenu` or `rofi`.  
+So how do I start applications, turn off the computer, connect to wifi or manage removable devices like usb flash drives, you are asking? I use `dmenu` or `rofi`.  
 
+### What is dmenu and rofi
 `dmenu` is a dynamic menu. The user gives it possible menu options as the input, and it creates a graphical menu with one item per line. The user can then select an item, through the arrow keys or typing a part of the name, and selected option is returned as the output. The user then takes the output, lets say it's `Power-off` and implements the action - powers down the computer.  
-`rofi` is more powerful `dmenu`.  
+
+`rofi` is more powerful `dmenu`  
 
 So in practice, applications are built around `dmenu` that are focusing on single task, like system power management, wifi connection, mouting/umouting removable devices etc...  
+
 You bind the application to a shortcut (or button) eg. `Super+m` and dmenu will popup a list eg.: of connected flash drives that you can mount or umount.
 
 {{ figure(src="/images/rofi-app-launcher.png" alt="rofi app launcher" caption="Example: application launcher") }}
