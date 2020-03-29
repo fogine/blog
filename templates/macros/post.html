@@ -1,3 +1,21 @@
+{% macro subscribe(page) %}
+    <div class="subscribe">
+        <form action="https://gmail.us4.list-manage.com/subscribe/post?u=ac9bbbed8073a9ba3d09ac731&amp;id=9805c9caa6" target="_blank" method="post" accept-charset="utf-8" novalidate>
+            <div id="subscribe_title">Stay updated on new tutorials</div>
+            <input type="email" name="EMAIL" id="email" placeholder="Email Address" value="">
+            <input type="submit" id="submit" value="Subscribe">
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_ac9bbbed8073a9ba3d09ac731_9805c9caa6" tabindex="-1" value="">
+            </div>
+            <ul class="subscribe_notes">
+                <li>* I will never share your email address.</li>
+                <li>* You can expect to get an email from me few times in a month at most.</li>
+                <li>* No SPAM!</li>
+            </ul>
+        </form>
+    </div>
+{% endmacro subscribe %}
+
 {% macro disqus(page) %}
     <div class="disqus_dialog">
         <div>
