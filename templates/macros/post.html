@@ -9,7 +9,7 @@
             </div>
             <ul class="subscribe_notes">
                 <li>* I will never share your email address.</li>
-                <li>* You can expect to get an email from me few times in a month at most.</li>
+                <li>* You can expect to get monthly newsletter from me.</li>
                 <li>* No SPAM!</li>
             </ul>
         </form>
@@ -40,7 +40,7 @@
 
 {% macro table_of_contents() %}
     {%- if page.extra.render_toc and page.toc %}
-        <h2 >Contents:</h2>
+        <h2 >Table of Contents:</h2>
         <ul>
             {% for h1 in page.toc %}
             <li>
