@@ -4,6 +4,10 @@
     {{ post_macros::head(page=page) }}
 {% endblock extra_head -%}
 
+{% block title %}
+    {{page.title}}
+{% endblock title %}
+
 {% block content %}
     <div class="post">
         {{ post_macros::header(page=page) }}
