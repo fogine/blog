@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>fogine software</title>
+        <link>https://fogine.dev</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://fogine.dev/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Wed, 22 Apr 2020 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>How to programmatically get google search results</title>
+                <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+                <link>https://fogine.dev/blog/how-to-programmatically-get-google-search-results/</link>
+                <guid>https://fogine.dev/blog/how-to-programmatically-get-google-search-results/</guid>
+                <description>&lt;p&gt;Recently, I needed a way how to programmatically search on google, while developing a linux applet - &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fogine&#x2F;rofi-search&quot;&gt;rofi-search&lt;&#x2F;a&gt; which allows for interactively searching for top results across multiple search engines.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s not known much that there is an official &lt;code&gt;Google API&lt;&#x2F;code&gt; you can use for getting the data right now!&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Using GitHub Issues for Blog Comments</title>
+                <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+                <link>https://fogine.dev/blog/using-github-issues-for-blog-comments/</link>
+                <guid>https://fogine.dev/blog/using-github-issues-for-blog-comments/</guid>
+                <description>&lt;p&gt;In the past, &lt;a href=&quot;https:&#x2F;&#x2F;disqus.com&#x2F;&quot;&gt;disqus&lt;&#x2F;a&gt; was the solution to go for when you needed a functionality for your static website that would enable people to post comments and ask questions under your posts.&lt;&#x2F;p&gt;
+&lt;p&gt;With it&#x27;s free tier, you would get a package with basic features. It comes with a price though of it being relatively heavy solution.&lt;br &#x2F;&gt;
+It&#x27;s ads supported and increases page weight by factor of &lt;code&gt;10&lt;&#x2F;code&gt;! Not to mention it lets other applications like Facebook to track your visitors.&lt;&#x2F;p&gt;
+&lt;p&gt;So recently when I was in middle of integration of &lt;code&gt;disqus&lt;&#x2F;code&gt; plugin to this blog, I decided to revisit my product of choice and explore other options in nowadays product driven market.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>My working environment</title>
+                <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+                <link>https://fogine.dev/blog/my-working-environment/</link>
+                <guid>https://fogine.dev/blog/my-working-environment/</guid>
+                <description>&lt;p&gt;As I spend significant amount of time working with computers, it&#x27;s important to me to have a desktop environment which does not distract me from work.&lt;&#x2F;p&gt;
+&lt;p&gt;Moreover I expect my system environment to help me be more productive and to complement my habits in context of how I interact with the environment.&lt;&#x2F;p&gt;
+&lt;p&gt;In this post I&#x27;m gonna describe how is my linux installation setup and main tools I use on every day basic for past 6 years and why.&lt;br &#x2F;&gt;
+Do not expect configuration tutorial but rather high-level toolset overview.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Serviser framework - introduction</title>
+                <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+                <link>https://fogine.dev/blog/serviser-framework-introduction/</link>
+                <guid>https://fogine.dev/blog/serviser-framework-introduction/</guid>
+                <description>&lt;p&gt;Is writing and maintaining up to date documentation for your APIs a pain for you?&lt;&#x2F;p&gt;
+&lt;p&gt;Do you miss an environment where it is safe to raise exceptions and not to worry about how they will propagate and be processed?&lt;&#x2F;p&gt;
+&lt;p&gt;What about having out of the box solution for validating complex input and output data structures without it polluting your domain logic?&lt;&#x2F;p&gt;
+&lt;p&gt;These were the main reasons of my motivation to create yet another &lt;code&gt;Node.js&lt;&#x2F;code&gt; web framework (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lucid-services&#x2F;serviser&quot;&gt;serviser&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>
